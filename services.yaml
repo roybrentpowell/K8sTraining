@@ -5,13 +5,13 @@ metadata:
 
 spec:
   selector:
-    app: queue
-    release: "1"
+    app: webapp
+    release: "0-5"
   
   ports:
   - name: http
     port: 80
-    nodePort: 30010
+    nodePort: 30080
 
   type: NodePort
 
