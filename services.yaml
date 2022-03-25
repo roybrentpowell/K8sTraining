@@ -8,7 +8,7 @@ spec:
   # the service becomes a network endpoint for either other services
   # or maybe external users to connect ot (eg browser)
   selector:
-    app: roywebapp
+    app: brentwebapp
   
   ports:
     - name: http
