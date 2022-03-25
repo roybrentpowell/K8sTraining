@@ -4,7 +4,21 @@ metadata:
   name: brentwebapp
   labels:
     app: brentwebapp
+    release: 0
 spec:
   containers:
   - name: brentcontainer
     image: richardchesterwood/k8s-fleetman-webapp-angular:release0
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: brentwebapp-release-0-5
+  labels:
+    app: brentwebapp
+    release: 0-5
+spec:
+  containers:
+  - name: brentcontainer
+    image: richardchesterwood/k8s-fleetman-webapp-angular:release0-5
