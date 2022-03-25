@@ -4,6 +4,9 @@ metadata:
   name: fleetman-webapp
 
 spec:
+  # this defines which pods are going to be represented by this service
+  # the service becomes a network endpoint for either other services
+  # or maybe external users to connect ot (eg browser)
   selector:
     app: brentwebapp
   
@@ -12,5 +15,6 @@ spec:
       port: 80
       nodePort: 30080
 
-  # Choose NodePort or ClusterIP
+  # Choose NodePort or ClusterIP (or LoadBalancer)
+  # If selecting NodePort, the above nodePort must be greater than 300000
   type: NodePort
