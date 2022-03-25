@@ -4,7 +4,7 @@ metadata:
   name: brentwebapp
   labels:
     app: brentwebapp
-    release: 0
+    release: "0"
 spec:
   containers:
   - name: brentcontainer
@@ -17,7 +17,7 @@ metadata:
   name: brentwebapp-release-0-5
   labels:
     app: brentwebapp
-    release: 0-5
+    release: "0-5"
 spec:
   containers:
   - name: brentcontainer

@@ -9,7 +9,7 @@ spec:
   # or maybe external users to connect ot (eg browser)
   selector:
     app: brentwebapp
-    release: 0
+    release: "0"
   
   ports:
     - name: http
