@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: brentwebapp
+  name: roywebapp
   labels:
     app: roywebapp
 spec:
