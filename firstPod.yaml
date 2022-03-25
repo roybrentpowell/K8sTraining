@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: brentwebapp
   labels:
-    app: brentwebapp
+    app: roywebapp
 spec:
   containers:
   - name: brentcontainer
