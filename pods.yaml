@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: brentcontainer
-    image: richardchesterwood/k8s-fleetman-webapp-angular:release0
+    image: richardchesterwood/k8s-fleetman-webapp-angular:release0-5
 
 ---
 apiVersion: v1
