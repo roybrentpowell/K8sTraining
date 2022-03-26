@@ -9,7 +9,7 @@ spec:
   # or maybe external users to connect ot (eg browser)
   selector:
     app: brentwebapp
-    release: "0"
+    release: "0-5"
   
   ports:
     - name: http
@@ -18,4 +18,20 @@ spec:
 
   # Choose NodePort or ClusterIP (or LoadBalancer)
   # If selecting NodePort, the above nodePort must be greater than 300000
+  type: NodePort
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: fleetman-queue
+
+spec:
+  selector:
+    app: queue
+  
+  ports:
+    - name: http
+      port: 8161
+      nodePort: 30010
+
   type: NodePort
