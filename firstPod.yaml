@@ -14,11 +14,10 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: brentwebapp-release-0-5
+  name: queue
   labels:
-    app: brentwebapp
-    release: "0-5"
+    app: queue
 spec:
   containers:
-  - name: brentcontainer
-    image: richardchesterwood/k8s-fleetman-webapp-angular:release0-5
+  - name: queuecontainer
+    image: richardchesterwood/k8s-fleetman-queue
