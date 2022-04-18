@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: webappcontainer
-          image: richardchesterwood/k8s-fleetman-webapp-angular:release1
+          image: richardchesterwood/k8s-fleetman-webapp-angular:release0-5
 
 ---
 apiVersion: v1
