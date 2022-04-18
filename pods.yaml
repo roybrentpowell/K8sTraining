@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
   name: webapp-replica
 spec:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: webappcontainer
-          image: richardchesterwood/k8s-fleetman-webapp-angular:release0-5
+          image: richardchesterwood/k8s-fleetman-webapp-angular:release0
 
 ---
 apiVersion: v1
