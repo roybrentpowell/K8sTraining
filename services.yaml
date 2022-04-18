@@ -18,6 +18,19 @@ spec:
   # Choose NodePort or ClusterIP (or LoadBalancer)
   # If selecting NodePort, the above nodePort must be greater than 300000
   type: NodePort
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: database
+spec:
+  selector:
+    app: mysql
+  ports:
+    - port: 3306
+  type: ClusterIP
+
 ---
 apiVersion: v1
 kind: Service
